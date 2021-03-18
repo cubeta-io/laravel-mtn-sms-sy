@@ -1,0 +1,54 @@
+{
+    "name": "cubeta/mtn-sms-sy",
+    "description": "a laravel package for the MTN sy SMS gateway",
+    "keywords": [
+        "cubeta",
+        "mtn-sms-sy"
+    ],
+    "homepage": "https://github.com/cubeta/mtn-sms-sy",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "cubeta",
+            "email": "info@cubeta.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cubeta\\MtnSmsSy\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cubeta\\MtnSmsSy\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cubeta\\MtnSmsSy\\MtnSmsSyServiceProvider"
+            ],
+            "aliases": {
+                "MtnSmsSy": "Cubeta\\MtnSmsSy\\MtnSmsSyFacade"
+            }
+        }
+    }
+}
