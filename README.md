@@ -1,4 +1,4 @@
-# Very short description of the package
+# Laravel MTN sy SMS gateway 
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/cubeta/mtn-sms-sy.svg?style=flat-square)](https://packagist.org/packages/cubeta/mtn-sms-sy)
 [![Build Status](https://img.shields.io/travis/cubeta/mtn-sms-sy/master.svg?style=flat-square)](https://travis-ci.org/cubeta/mtn-sms-sy)
